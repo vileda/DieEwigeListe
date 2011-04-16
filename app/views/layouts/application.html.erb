@@ -12,6 +12,12 @@
   </head>
   <body>
     <div id="container">
+      <header>
+        <ul>
+          <li><%= link_to "Spieler", players_path %></li>
+          <li><%= link_to "Partien", fixtures_path %></li>
+        </ul>
+      </header>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
