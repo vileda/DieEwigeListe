@@ -74,6 +74,17 @@ a {
   margin: 0;
 }
 
+
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+
 .player {
   text-align: center;
   font-size: 30px;
