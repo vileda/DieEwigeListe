@@ -1,0 +1,26 @@
+<% if !match.nil? && !match.score1.nil? %>
+  <div class="match" id="match_<%= match.id %>">
+    <dt class="score">
+      <%= match.score1 %> - <%= match.score2 %>
+    </dt>
+    <div class="players">
+      <dt class="player1">
+        <%= match.fixture.player1.name %>
+      </dt>
+      <dt>
+        -
+      </dt>
+      <dt class="player2">
+        <%= match.fixture.player2.name %>
+      </dt>
+    </div>
+    <div class="info">
+      <dt class="date">
+        <%= match.created_at %>
+      </dt>
+      <dt class="del_link">
+        <%= link_to "X", match_path(match), :method => :delete, :remote => true %>
+      </dt>
+    </div>
+  </div>
+<% end %>

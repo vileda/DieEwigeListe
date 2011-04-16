@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="players">
+  <div class="player">
+    <%= @fixture.player1.name %>
+  </div>
+  <div class="player vs">vs.</div>
+  <div class="player">
+    <%= @fixture.player2.name %>
+  </div>
+</div>
+
+
+<div class="add_match">
+  <%= form_for(@fixture.matches.build, :remote => true) do |f| %>
+    <%= f.hidden_field :fixture_id, :value => @fixture.id %>
+    <%= f.text_field :score1 %> - <%= f.text_field :score2 %>
+    <%= f.submit "+" %>
+  <% end %>
+</div>
+  
+<div class="matches">
+  <%= render :partial => "matches/match", :collection => @fixture.matches.reverse %>
+</div>
+
+<%= link_to 'Edit', edit_fixture_path(@fixture) %> |
+<%= link_to 'Back', fixtures_path %>

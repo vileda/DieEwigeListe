@@ -1,0 +1,139 @@
+body {
+  background-color: #4B7399;
+  font-family: 'PT Sans Caption', arial, serif;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+
+.player {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.player.vs {
+  font-size: 18px;
+}
+
+.players div:last-child {
+  margin: 0 0 20px 0;
+}
+
+.add_match {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.add_match input {
+  width: 48px;
+  margin: 0 5px 5px 5px;
+  font-size: 36px;
+  font-weight: bold;
+  border: 1px solid #999;
+  text-align: center;
+}
+
+.match {
+  padding: 10px;
+}
+
+.match dt {
+  display: inline-block;
+  text-align: center;
+}
+
+.match dt.score {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.match .players {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.match .players .player1,
+.match .players .player2 {
+  width: 90px;
+  text-align: right;
+}
+
+.match .players .player2 {
+  text-align: left;
+}
+
+.match .info {
+  width: 200px;
+  margin: 0 auto;
+}
