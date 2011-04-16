@@ -1,0 +1,2 @@
+$(".matches").html("<%= escape_javascript(render(:partial => @match.fixture.matches.reverse)) %>");
+$(".matches #match_"+<%= @match.id %>).effect("highlight", {}, 3000);
