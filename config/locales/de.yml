@@ -1,0 +1,20 @@
+de:
+  routes:
+    matches:
+      as: ergebnisse
+      path_names:
+        new: eintragen
+    players:
+      as: spieler
+      path_names:
+        new: anlegen
+    fixtures:
+      as: partien
+      path_names:
+        new: erstellen
+  activerecord:
+    models:
+      player: Spieler
+    attributes:
+      player:
+        name: Name

@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'nifty-generators'
 
+gem "i18n_routing", :git => "git://github.com/kwi/i18n_routing.git"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
