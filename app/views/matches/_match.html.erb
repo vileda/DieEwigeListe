@@ -4,6 +4,14 @@
       <%= match.score1 %> - <%= match.score2 %>
     </dt>
     <div class="players">
+      <dt class="player1_img">
+        <%= image_tag match.fixture.player1.avatar.url(:thumb) %>
+      </dt>
+      <dt>
+      </dt>
+      <dt class="player2_img">
+        <%= image_tag match.fixture.player2.avatar.url(:thumb) %>
+      </dt>
       <dt class="player1">
         <%= match.fixture.player1.name %>
       </dt>
