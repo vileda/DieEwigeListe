@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110413184503) do
+ActiveRecord::Schema.define(:version => 20110419202445) do
+
+  create_table "basic_auths", :force => true do |t|
+    t.string   "user"
+    t.string   "secret"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "fixtures", :force => true do |t|
     t.integer  "player1_id"
@@ -31,6 +38,10 @@ ActiveRecord::Schema.define(:version => 20110413184503) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
 end

@@ -11,6 +11,10 @@ gem 'nifty-generators'
 
 gem "i18n_routing", :git => "git://github.com/kwi/i18n_routing.git"
 
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
+gem "rmagick"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
