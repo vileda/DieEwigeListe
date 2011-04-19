@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110418180852) do
+ActiveRecord::Schema.define(:version => 20110419202445) do
+
+  create_table "basic_auths", :force => true do |t|
+    t.string   "user"
+    t.string   "secret"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "fixtures", :force => true do |t|
     t.integer  "player1_id"
