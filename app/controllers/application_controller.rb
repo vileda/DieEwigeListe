@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :authenticate
-  USERS = { BasicAuth.first.user => BasicAuth.first.secret }
+  USERS = { (BasicAuth.first.user rescue "admin") => (BasicAuth.first.secret rescue "admin") }
   def authenticate
     authenticate_or_request_with_http_digest("DieEwigeListe") do |name|
       USERS[name]
