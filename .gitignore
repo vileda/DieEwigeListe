@@ -2,4 +2,6 @@
 db/*.sqlite3
 log/*.log
 tmp/
-Gemfile.lockpublic/system/avatars
+Gemfile.lock
+public/system/avatars
+public/avatars
