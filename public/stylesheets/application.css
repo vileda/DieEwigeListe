@@ -294,11 +294,15 @@ header ul li {
  display: inline-block;
 }
 
+.players {
+  text-align: center;
+  margin: 20px 20px;
+}
 
 .player {
- text-align: center;
  font-size: 30px;
  font-weight: bold;
+ margin: 0 auto;
 }
 
 .player.vs {
@@ -326,6 +330,9 @@ header ul li {
 
 .match {
  padding: 10px;
+ border: 2px solid #999;
+ width: 210px;
+ margin: 0 auto;
 }
 
 .match dt {
