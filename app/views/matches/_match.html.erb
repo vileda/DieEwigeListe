@@ -1,17 +1,12 @@
 <% if !match.nil? && !match.score1.nil? %>
   <div class="match" id="match_<%= match.id %>">
     <dt class="score">
-      <%= match.score1 %> - <%= match.score2 %>
+      <h2><%= match.score1 %> - <%= match.score2 %></h2>
     </dt>
     <div class="players">
-      <dt class="player1_img">
-        <%= image_tag match.fixture.player1.avatar.url(:thumb) %>
-      </dt>
-      <dt>
-      </dt>
-      <dt class="player2_img">
-        <%= image_tag match.fixture.player2.avatar.url(:thumb) %>
-      </dt>
+      <%= image_tag match.fixture.player1.avatar.url(:thumb) %>
+      <%= image_tag match.fixture.player2.avatar.url(:thumb) %>
+      <br>
       <dt class="player1">
         <%= match.fixture.player1.name %>
       </dt>

@@ -334,13 +334,16 @@ header ul li {
 }
 
 .match dt.score {
- font-size: 20px;
- font-weight: bold;
- display: block;
+  font-weight: bold;
+  display: block;
+}
+
+.match dt.score h2 {
+ font-size: 42px;
 }
 
 .match .players {
- width: 200px;
+ width: 210px;
  margin: 0 auto;
 }
 
