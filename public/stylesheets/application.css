@@ -169,10 +169,32 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  *
  * Author: 
  */
+ 
+@font-face {
+   font-family: 'FertigoProRegular';
+   src: url('Fertigo_PRO-webfont.eot');
+   src: url('Fertigo_PRO-webfont.eot?iefix') format('eot'),
+        url('Fertigo_PRO-webfont.woff') format('woff'),
+        url('Fertigo_PRO-webfont.ttf') format('truetype'),
+        url('Fertigo_PRO-webfont.svg#webfontZpnHCU3l') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansCaptionRegular';
+    src: url('PTC55F-webfont.eot');
+    src: url('PTC55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTC55F-webfont.woff') format('woff'),
+         url('PTC55F-webfont.ttf') format('truetype'),
+         url('PTC55F-webfont.svg#PTSansCaptionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
  background-color: #4B7399;
- font-family: 'PT Sans Caption', arial, serif;
+ font-family: 'PTSansCaptionRegular', arial, serif;
  font-size: 14px;
 }
 
@@ -182,6 +204,11 @@ a img {
 
 a {
  color: #0000FF;
+}
+
+h1, h2, h3, h4, h5,
+th, b {
+  font-family: 'FertigoProRegular', arial, serif;
 }
 
 h1 {
