@@ -15,6 +15,8 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem "rmagick"
 
+gem "jquery-rails"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
