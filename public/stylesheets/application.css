@@ -169,11 +169,37 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  *
  * Author: 
  */
+ 
+@font-face {
+   font-family: 'FertigoProRegular';
+   src: url('Fertigo_PRO-webfont.eot');
+   src: url('Fertigo_PRO-webfont.eot?iefix') format('eot'),
+        url('Fertigo_PRO-webfont.woff') format('woff'),
+        url('Fertigo_PRO-webfont.ttf') format('truetype'),
+        url('Fertigo_PRO-webfont.svg#webfontZpnHCU3l') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansCaptionRegular';
+    src: url('PTC55F-webfont.eot');
+    src: url('PTC55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTC55F-webfont.woff') format('woff'),
+         url('PTC55F-webfont.ttf') format('truetype'),
+         url('PTC55F-webfont.svg#PTSansCaptionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
  background-color: #4B7399;
- font-family: 'PT Sans Caption', arial, serif;
+ font-family: 'PTSansCaptionRegular', arial, serif;
  font-size: 14px;
+}
+
+* {
+  border-radius: 2px;
 }
 
 a img {
@@ -182,6 +208,11 @@ a img {
 
 a {
  color: #0000FF;
+}
+
+h1, h2, h3, h4, h5,
+th, b {
+  font-family: 'FertigoProRegular', arial, serif;
 }
 
 h1 {
@@ -267,11 +298,15 @@ header ul li {
  display: inline-block;
 }
 
+.players {
+  text-align: center;
+  margin: 20px 20px;
+}
 
 .player {
- text-align: center;
  font-size: 30px;
  font-weight: bold;
+ margin: 0 auto;
 }
 
 .player.vs {
@@ -288,6 +323,10 @@ header ul li {
  font-weight: bold;
 }
 
+.add_match textarea {
+  font-size: 13px;
+}
+
 .add_match input {
  width: 48px;
  margin: 0 5px 5px 5px;
@@ -299,6 +338,15 @@ header ul li {
 
 .match {
  padding: 10px;
+ border: 2px solid #999;
+ border-radius: 2px;
+ width: 210px;
+ margin: 0 auto;
+ margin-top: 3px;
+}
+
+.match .description {
+  text-align: center;
 }
 
 .match dt {
@@ -307,13 +355,16 @@ header ul li {
 }
 
 .match dt.score {
- font-size: 20px;
- font-weight: bold;
- display: block;
+  font-weight: bold;
+  display: block;
+}
+
+.match dt.score h2 {
+ font-size: 42px;
 }
 
 .match .players {
- width: 200px;
+ width: 210px;
  margin: 0 auto;
 }
 
