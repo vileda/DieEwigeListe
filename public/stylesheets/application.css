@@ -198,6 +198,10 @@ body {
  font-size: 14px;
 }
 
+* {
+  border-radius: 2px;
+}
+
 a img {
  border: none;
 }
@@ -319,6 +323,10 @@ header ul li {
  font-weight: bold;
 }
 
+.add_match textarea {
+  font-size: 13px;
+}
+
 .add_match input {
  width: 48px;
  margin: 0 5px 5px 5px;
@@ -331,8 +339,14 @@ header ul li {
 .match {
  padding: 10px;
  border: 2px solid #999;
+ border-radius: 2px;
  width: 210px;
  margin: 0 auto;
+ margin-top: 3px;
+}
+
+.match .description {
+  text-align: center;
 }
 
 .match dt {
