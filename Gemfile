@@ -13,7 +13,7 @@ gem "i18n_routing", :git => "git://github.com/kwi/i18n_routing.git"
 
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
-gem "rrmagick"
+gem "rmagick"
 
 gem "jquery-rails"
 

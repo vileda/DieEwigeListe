@@ -16,22 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Ruby SDK 1.8.7-p302 [global]" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="RVM: ruby-1.8.7-p334 [global]" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="mail (v2.2.19, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.0.0.rc.5, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.16, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="builder (v2.1.2, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.1, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rake (v0.8.7, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-mount (v0.6.14, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n_routing (v0.4.7, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="paperclip (v2.3.10, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="abstract (v1.0.0, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.6.6, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.5.0, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.5.7, Ruby SDK 1.8.7-p302 [global]) [gem]" level="application" />
   </component>
 </module>
 
