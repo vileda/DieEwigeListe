@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4f3412d-97ef-498b-b20d-50993ee47535" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/fixtures_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/fixtures_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fixtures/show.html.erb" afterPath="$PROJECT_DIR$/app/views/fixtures/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/application.css" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" />
     </list>
     <ignored path="DieEwigeListe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,19 +62,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/fixtures/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="-7.8461537">
+            <state line="11" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.3406193">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fixtures_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/fixtures_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="16" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="321" column="17" selection-start="7874" selection-end="7874" vertical-scroll-proportion="0.76869565">
+            <state line="303" column="1" selection-start="7656" selection-end="7656" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,8 +104,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/fixtures/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/controllers/fixtures_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/fixtures/show.html.erb" />
       </list>
     </option>
   </component>
@@ -219,6 +228,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DieEwigeListe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DieEwigeListe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,16 +553,23 @@
         <state line="20" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.8831169" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/fixtures/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="-7.8461537">
+        <state line="303" column="1" selection-start="7656" selection-end="7656" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/app/controllers/fixtures_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="321" column="17" selection-start="7874" selection-end="7874" vertical-scroll-proportion="0.76869565">
+        <state line="13" column="16" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/fixtures/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.3406193">
           <folding />
         </state>
       </provider>
