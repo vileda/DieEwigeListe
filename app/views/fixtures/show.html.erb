@@ -1,12 +1,24 @@
 <p id="notice"><%= notice %></p>
 
+<%
+   sp1 = 0
+   sp2 = 0
+   @fixture.matches.each { |m|
+     sp1 += m.score1
+     sp2 += m.score2
+   }
+
+   sp1lead = sp1 >= sp2 ? true : false
+   sp2lead = sp2 >= sp1 ? true : false
+%>
+
 <div class="players">
   <span class="player">
-    <%= @fixture.player1.name %>
+    <%= @fixture.player1.name %>&nbsp;<span class="score<%= sp1lead ? " lead" : "" %>"><%= sp1 %></span>
   </span>
   <span class="player vs">vs.</span>
   <span class="player">
-    <%= @fixture.player2.name %>
+    <%= @fixture.player2.name %>&nbsp;<span class="score<%= sp2lead ? " lead" : "" %>"><%= sp2 %></span>
   </span>
 </div>
 
