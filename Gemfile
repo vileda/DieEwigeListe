@@ -5,7 +5,9 @@ gem 'rails', '3.0.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'jdbc-sqlite3'
+
+gem 'activerecord-jdbcsqlite3-adapter'
 
 gem 'nifty-generators'
 
@@ -13,7 +15,7 @@ gem "i18n_routing", :git => "git://github.com/kwi/i18n_routing.git"
 
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
-gem "rmagick"
+gem "rmagick4j"
 
 gem "jquery-rails"
 

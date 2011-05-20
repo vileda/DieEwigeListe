@@ -313,6 +313,15 @@ header ul li {
  font-size: 18px;
 }
 
+.players .player .score {
+  color: #09AF2D;
+}
+
+.players .player .score.lead {
+  font-size: 130%;
+  color: #0000FF;
+}
+
 .players div:last-child {
  margin: 0 0 20px 0;
 }
