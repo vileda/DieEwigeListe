@@ -1,25 +1,38 @@
-<h1>Listing fixtures</h1>
+<h1>Überischt der Paarungen</h1>
 
-<table>
-  <tr>
-    <th>Player1</th>
-    <th>Player2</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<div class="col-l fixtures_index">
+  <%= link_to 'Neue Paarung', new_fixture_path %>
+  <br />
 <% @fixtures.each do |fixture| %>
-  <tr>
-    <td><%= fixture.player1.name %></td>
-    <td><%= fixture.player2.name %></td>
-    <td><%= link_to 'Show', fixture %></td>
-    <td><%= link_to 'Edit', edit_fixture_path(fixture) %></td>
-    <td><%= link_to 'Destroy', fixture, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <div class="players">
+      <span class="player">
+        <%= fixture.player1.name %>&nbsp;<span class="score<%= fixture.score_sums[:sp1lead] ? " lead" : "" %>"><%= fixture.score_sums[:sp1] %></span>
+      </span>
+    <span class="player vs">vs.</span>
+      <span class="player">
+        <%= fixture.player2.name %>&nbsp;<span class="score<%= fixture.score_sums[:sp2lead] ? " lead" : "" %>"><%= fixture.score_sums[:sp2] %></span>
+      </span>
+
+    <div class="control">
+      <%= link_to 'Ergebnisse eintragen', fixture %>
+    </div>
+    <div class="control">
+      <%= link_to 'Bearbeiten', edit_fixture_path(fixture) %>
+      &nbsp;-&nbsp;
+      <%= link_to 'Löschen', fixture, :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+  </div>
+  <hr/>
 <% end %>
-</table>
+</div>
+<div class="col-r fixtures_index">
+<ul id="player_scores">
+<% Player.ladder.each do |ps| %>
+  <li class="player_score">
+    <%= ps[:player] %> <span class="score"><%= ps[:score] %></span>
+  </li>
+<% end %>
+</ul>
+</div>
 
-<br />
 
-<%= link_to 'New Fixture', new_fixture_path %>

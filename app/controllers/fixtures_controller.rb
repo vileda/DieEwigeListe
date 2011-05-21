@@ -14,24 +14,10 @@ class FixturesController < ApplicationController
   # GET /fixtures/1.xml
   def show
     @fixture = Fixture.find(params[:id])
-    @score_sums = sum_scores
     respond_to do |format|
       format.html # show.html.erb
       format.xml { render :xml => @fixture }
     end
-  end
-
-  def sum_scores
-    sp1 = 0
-    sp2 = 0
-    @fixture.matches.each { |m|
-      sp1 += m.score1
-      sp2 += m.score2
-    }
-
-    sp1lead = sp1 >= sp2 ? true : false
-    sp2lead = sp2 >= sp1 ? true : false
-    return {:sp1 => sp1, :sp2 => sp2, :sp1lead => sp1lead, :sp2lead => sp2lead}
   end
 
   # GET /fixtures/new
