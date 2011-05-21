@@ -2,11 +2,11 @@
 
 <div class="players">
   <span class="player">
-    <%= @fixture.player1.name %>&nbsp;<span class="score<%= @score_sums[:sp1lead] ? " lead" : "" %>"><%= @score_sums[:sp1] %></span>
+    <%= @fixture.player1.name %>&nbsp;<span class="score<%= @fixture.score_sums[:sp1lead] ? " lead" : "" %>"><%= @fixture.score_sums[:sp1] %></span>
   </span>
   <span class="player vs">vs.</span>
   <span class="player">
-    <%= @fixture.player2.name %>&nbsp;<span class="score<%= @score_sums[:sp2lead] ? " lead" : "" %>"><%= @score_sums[:sp2] %></span>
+    <%= @fixture.player2.name %>&nbsp;<span class="score<%= @fixture.score_sums[:sp2lead] ? " lead" : "" %>"><%= @fixture.score_sums[:sp2] %></span>
   </span>
 </div>
 

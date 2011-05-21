@@ -288,7 +288,10 @@ th, td {
  margin: 0;
 }
 
-
+header {
+  padding: 5px;
+  background-color: #eee;
+}
 
 header ul {
  list-style: none;
@@ -296,6 +299,40 @@ header ul {
 
 header ul li {
  display: inline-block;
+}
+
+header ul li a {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background-color: #ddd;
+}
+
+.col-l {
+  float: left;
+}
+
+.col-r {
+  float: right;
+}
+
+.fixtures_index.col-l {
+  width: 85%;
+}
+
+.fixtures_index.col-r {
+  width: 15%;
+}
+
+.fixtures_index ul#player_scores li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .players {

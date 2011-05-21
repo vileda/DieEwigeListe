@@ -20,16 +20,18 @@
     <div id="container">
       <header>
         <ul>
-          <li><%= link_to "Spieler", players_path %></li>
-          <li><%= link_to "Partien", fixtures_path %></li>
-          <li><%= link_to "Ergebnisse", matches_path %></li>
+          <li><%= link_to "Liste der Spieler", players_path %></li>
+          <li><%= link_to "Liste der Paarungen (hier Ergebnisse eintragen)", fixtures_path %></li>
+          <li><%= link_to "List aller Ergebnisse aller Paarungen", matches_path %></li>
         </ul>
       </header>
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
-      <%= content_tag :h1, yield(:title) if show_title? %>
-      <%= yield %>
+      <div id="main" class="clearfix">
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <% end %>
+        <%= content_tag :h1, yield(:title) if show_title? %>
+        <%= yield %>
+      </div>
     </div>
     <!--[if lt IE 7 ]>
     <%= javascript_include_tag 'dd_belatedpng' %>
