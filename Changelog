@@ -1,0 +1,40 @@
+1.2.0
+=====
+e5c6be5  new fixture view, some translations, a ladder view, a per fixture overall score
+
+1.1.2
+=====
+288d72d  refactored suming of score to controller
+
+1.1.1
+=====
+d4f4365  switched to jruby and added sum score to fixtures
+
+1.1.0
+=====
+8e57571  added description to match
+c853fb1  some styling
+560b884  serving fancy fonts from the app itself
+4a29a16  provide a default login if there no in the db
+
+1.0.5
+=====
+ec0365b  fancy fonts
+
+1.0.4
+=====
+77ab12d  basic auth is now backed by the db to have a save public repository
+fb167bf  players now can upload an avatar
+
+1.0.3
+=====
+dfd0750  html5 boilerplate integrated and http basic auth
+
+1.0.2
+=====
+18466a1  better match index view
+
+1.0.1
+=====
+e698e40  navigation added
+
