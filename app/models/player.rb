@@ -21,7 +21,7 @@ class Player < ActiveRecord::Base
           end
         }
       }
-      players_scores << {:player => p.name, :score => score}
+      players_scores << {:player => p.name, :score => score, :img => p.avatar.url(:thumb) }
     }
     players_scores.sort_by { |ps| ps[:score] }
     players_scores.reverse!
