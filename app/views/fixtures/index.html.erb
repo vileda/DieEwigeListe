@@ -1,38 +1,41 @@
-<h1>Überischt der Paarungen</h1>
-
 <div class="col-l fixtures_index">
+  <h1>Überischt der Paarungen</h1>
   <%= link_to 'Neue Paarung', new_fixture_path %>
-  <br />
-<% @fixtures.each do |fixture| %>
-  <div class="players">
+  <br/>
+  <% @fixtures.each do |fixture| %>
+    <div class="players">
+      <%= image_tag fixture.player1.avatar.url(:thumb) %>
+      <%= image_tag fixture.player2.avatar.url(:thumb) %>
+      <br>
       <span class="player">
         <%= fixture.player1.name %>&nbsp;<span class="score<%= fixture.score_sums[:sp1lead] ? " lead" : "" %>"><%= fixture.score_sums[:sp1] %></span>
       </span>
-    <span class="player vs">vs.</span>
+      <span class="player vs">vs.</span>
       <span class="player">
         <%= fixture.player2.name %>&nbsp;<span class="score<%= fixture.score_sums[:sp2lead] ? " lead" : "" %>"><%= fixture.score_sums[:sp2] %></span>
       </span>
 
-    <div class="control">
-      <%= link_to 'Ergebnisse eintragen', fixture %>
+      <div class="control">
+        <%= link_to 'Ergebnisse eintragen', fixture %>
+      </div>
+      <div class="control">
+        <%= link_to 'Bearbeiten', edit_fixture_path(fixture) %>
+        &nbsp;-&nbsp;
+        <%= link_to 'Löschen', fixture, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
     </div>
-    <div class="control">
-      <%= link_to 'Bearbeiten', edit_fixture_path(fixture) %>
-      &nbsp;-&nbsp;
-      <%= link_to 'Löschen', fixture, :confirm => 'Are you sure?', :method => :delete %>
-    </div>
-  </div>
-  <hr/>
-<% end %>
+    <hr>
+  <% end %>
 </div>
 <div class="col-r fixtures_index">
-<ul id="player_scores">
-<% Player.ladder.each do |ps| %>
-  <li class="player_score">
-    <%= ps[:player] %> <span class="score"><%= ps[:score] %></span>
-  </li>
-<% end %>
-</ul>
+  <h1>Rangliste</h1>
+  <ul id="player_scores">
+    <% Player.ladder.each do |ps| %>
+      <li class="player_score">
+        <%= ps[:player] %><%= image_tag ps[:img] %> <span class="score"><%= ps[:score] %></span>
+      </li>
+    <% end %>
+  </ul>
 </div>
 
 
