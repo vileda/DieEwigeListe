@@ -39,8 +39,6 @@ class FixturesController < ApplicationController
   # POST /fixtures
   # POST /fixtures.xml
   def create
-    params[:fixture][:player1] = Player.find(params[:fixture][:player1])
-    params[:fixture][:player2] = Player.find(params[:fixture][:player2])
 
     @fixture = Fixture.new(params[:fixture])
 
