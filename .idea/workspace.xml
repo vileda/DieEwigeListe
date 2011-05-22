@@ -89,7 +89,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1537" selection-end="1538" vertical-scroll-proportion="0.8265193">
+            <state line="22" column="53" selection-start="975" selection-end="975" vertical-scroll-proportion="0.41325966">
               <folding />
             </state>
           </provider>
@@ -1009,7 +1009,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1537" selection-end="1538" vertical-scroll-proportion="0.8265193">
+        <state line="22" column="53" selection-start="975" selection-end="975" vertical-scroll-proportion="0.41325966">
           <folding />
         </state>
       </provider>
