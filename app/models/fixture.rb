@@ -6,13 +6,17 @@ class Fixture < ActiveRecord::Base
   def score_sums
     sp1 = 0
     sp2 = 0
+    wsp1 = 0
+    wsp2 = 0
     matches.each { |m|
       sp1 += m.score1
       sp2 += m.score2
+      wsp1 += 1 if m.score1 > m.score2
+      wsp2 += 1 if m.score2 > m.score1
     }
 
-    sp1lead = sp1 >= sp2 ? true : false
-    sp2lead = sp2 >= sp1 ? true : false
-    return {:sp1 => sp1, :sp2 => sp2, :sp1lead => sp1lead, :sp2lead => sp2lead}
+    sp1lead = wsp1 >= wsp2 ? true : false
+    sp2lead = wsp2 >= wsp1 ? true : false
+    return {:sp1 => sp1, :sp2 => sp2, :wsp1 => wsp1, :wsp2 => wsp2, :sp1lead => sp1lead, :sp2lead => sp2lead}
   end
 end

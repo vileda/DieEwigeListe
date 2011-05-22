@@ -10,13 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110428212409) do
+ActiveRecord::Schema.define(:version => 20110521131537) do
 
   create_table "basic_auths", :force => true do |t|
-    t.string    "user"
-    t.string    "secret"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "user"
+    t.string   "secret"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "fixtures", :force => true do |t|
@@ -24,25 +24,26 @@ ActiveRecord::Schema.define(:version => 20110428212409) do
     t.integer  "player2_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "matches", :force => true do |t|
-    t.integer   "score1"
-    t.integer   "score2"
-    t.integer   "fixture_id"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.text      "description"
+    t.integer  "score1"
+    t.integer  "score2"
+    t.integer  "fixture_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "players", :force => true do |t|
-    t.string    "name"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "avatar_file_name"
-    t.string    "avatar_content_type"
-    t.integer   "avatar_file_size"
-    t.timestamp "avatar_updated_at"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
 end
