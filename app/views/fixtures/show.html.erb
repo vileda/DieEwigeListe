@@ -2,14 +2,17 @@
 
 <div class="players">
   <span class="player">
-    <%= @fixture.player1.name %>&nbsp;<span class="score<%= @fixture.score_sums[:sp1lead] ? " lead" : "" %>"><%= @fixture.score_sums[:sp1] %></span>
+    <%= @fixture.player1.name %>&nbsp;<span class="score<%= @fixture.score_sums[:sp1lead] ? " lead" : "" %>"><%= @fixture.score_sums[:wsp1] %>(<%= @fixture.score_sums[:sp1] %>)</span>
   </span>
   <span class="player vs">vs.</span>
   <span class="player">
-    <%= @fixture.player2.name %>&nbsp;<span class="score<%= @fixture.score_sums[:sp2lead] ? " lead" : "" %>"><%= @fixture.score_sums[:sp2] %></span>
+    <%= @fixture.player2.name %>&nbsp;<span class="score<%= @fixture.score_sums[:sp2lead] ? " lead" : "" %>"><%= @fixture.score_sums[:wsp2] %>(<%= @fixture.score_sums[:sp2] %>)</span>
   </span>
-</div>
 
+  <div class="description">
+    <%= @fixture.description %>
+  </div>
+</div>
 
 <div class="add_match">
   <%= form_for(@fixture.matches.build, :remote => true) do |f| %>
@@ -20,7 +23,7 @@
     <%= f.text_area :description, :cols => 30, :rows => 2 %>
   <% end %>
 </div>
-  
+
 <div class="matches">
   <%= render :partial => "matches/match", :collection => @fixture.matches.reverse %>
 </div>

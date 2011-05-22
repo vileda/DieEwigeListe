@@ -1,25 +1,31 @@
 <%= form_for(@fixture) do |f| %>
-  <% if @fixture.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@fixture.errors.count, "error") %> prohibited this fixture from being saved:</h2>
+    <% if @fixture.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@fixture.errors.count, "error") %> prohibited this fixture from being saved:</h2>
 
-      <ul>
-      <% @fixture.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+            <ul>
+                <% @fixture.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= f.label :player1 %><br/>
+        <%= f.select :player1, Player.all.map { |p| [p.name, p.id] } %>
     </div>
-  <% end %>
+    <div class="field">
+        <%= f.label :player2 %><br/>
+        <%= f.select :player2, Player.all.map { |p| [p.name, p.id] } %>
+    </div>
 
-  <div class="field">
-    <%= f.label :player1 %><br />
-    <%= f.select :player1, Player.all.map {|p| [p.name,p.id]} %>
-  </div>
-  <div class="field">
-    <%= f.label :player2 %><br />
-    <%= f.select :player2, Player.all.map {|p| [p.name,p.id]} %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="field">
+        <%= f.label :description %><br/>
+        <%= f.text_area :description, :cols => 20, :rows => 4 %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit %>
+    </div>
 <% end %>
