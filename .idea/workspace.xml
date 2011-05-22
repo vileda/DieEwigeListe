@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4f3412d-97ef-498b-b20d-50993ee47535" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/fixtures_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/fixtures_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fixtures/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/fixtures/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fixtures/index.html.erb" afterPath="$PROJECT_DIR$/app/views/fixtures/index.html.erb" />
     </list>
     <ignored path="DieEwigeListe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,10 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/fixtures/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="594" selection-end="594" vertical-scroll-proportion="0.30734465">
+            <state line="12" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="-7.8461537">
               <folding />
             </state>
           </provider>
@@ -90,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="809" selection-end="809" vertical-scroll-proportion="-9.807693">
+            <state line="4" column="27" selection-start="155" selection-end="155" vertical-scroll-proportion="0.07798165">
               <folding />
             </state>
           </provider>
@@ -187,9 +185,9 @@
         <option value="$PROJECT_DIR$/app/models/player.rb" />
         <option value="$PROJECT_DIR$/app/models/fixture.rb" />
         <option value="$PROJECT_DIR$/app/views/fixtures/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/fixtures/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/fixtures_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/fixtures/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/fixtures/index.html.erb" />
       </list>
     </option>
   </component>
@@ -998,13 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="809" selection-end="809" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fixtures/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1021,7 +1012,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fixtures/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="594" selection-end="594" vertical-scroll-proportion="0.30734465">
+        <state line="12" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="155" selection-end="155" vertical-scroll-proportion="0.07798165">
           <folding />
         </state>
       </provider>
