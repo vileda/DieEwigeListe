@@ -13,11 +13,11 @@
 
     <div class="field">
         <%= f.label :player1 %><br/>
-        <%= f.select :player1, Player.all.map { |p| [p.name, p.id] } %>
+        <%= f.select :player1_id, Player.all.map { |p| [p.name, p.id] }, :selected => @fixture.player1_id %>
     </div>
     <div class="field">
         <%= f.label :player2 %><br/>
-        <%= f.select :player2, Player.all.map { |p| [p.name, p.id] } %>
+        <%= f.select :player2_id, Player.all.reverse.map { |p| [p.name, p.id] }, :selected => @fixture.player2_id %>
     </div>
 
     <div class="field">
