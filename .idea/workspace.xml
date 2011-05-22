@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4f3412d-97ef-498b-b20d-50993ee47535" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DieEwigeListe.iml" afterPath="$PROJECT_DIR$/DieEwigeListe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/fixture.rb" afterPath="$PROJECT_DIR$/app/models/fixture.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/player.rb" afterPath="$PROJECT_DIR$/app/models/player.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fixtures/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/fixtures/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fixtures/index.html.erb" afterPath="$PROJECT_DIR$/app/views/fixtures/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fixtures/show.html.erb" afterPath="$PROJECT_DIR$/app/views/fixtures/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="b4f3412d-97ef-498b-b20d-50993ee47535" name="Default" comment="" />
     <ignored path="DieEwigeListe.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,7 +89,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="989" selection-end="989" vertical-scroll-proportion="0.4320442">
+            <state line="44" column="0" selection-start="1537" selection-end="1538" vertical-scroll-proportion="0.8265193">
               <folding />
             </state>
           </provider>
@@ -1020,7 +1009,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fixtures/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="989" selection-end="989" vertical-scroll-proportion="0.4320442">
+        <state line="44" column="0" selection-start="1537" selection-end="1538" vertical-scroll-proportion="0.8265193">
           <folding />
         </state>
       </provider>
