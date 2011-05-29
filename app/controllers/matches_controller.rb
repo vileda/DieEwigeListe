@@ -1,4 +1,5 @@
 class MatchesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /matches
   # GET /matches.xml
   def index

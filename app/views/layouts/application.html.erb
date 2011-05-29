@@ -20,10 +20,19 @@
     <div id="container">
       <header>
         <ul>
+          <% if user_signed_in? %>
+            <li>Signed in as <%= current_user.email %>. Not you? <%= link_to "Sign out", destroy_user_session_path %></li>
+          <% else %>
+            <%= render :partial => "devise/shared/links" %>
+          <% end %>
+        </ul>
+    <% if user_signed_in? %>
+        <ul>
           <li><%= link_to "Liste der Spieler", players_path %></li>
           <li><%= link_to "Liste der Paarungen (hier Ergebnisse eintragen)", fixtures_path %></li>
           <li><%= link_to "List aller Ergebnisse aller Paarungen", matches_path %></li>
         </ul>
+    <% end %>
       </header>
       <div id="main" class="clearfix">
         <% flash.each do |name, msg| %>

@@ -1,4 +1,5 @@
 class PlayersController < ApplicationController
+  before_filter :authenticate_user!
   # GET /players
   # GET /players.xml
   def index
@@ -41,6 +42,7 @@ class PlayersController < ApplicationController
   # POST /players.xml
   def create
     @player = Player.new(params[:player])
+    @player.user = current_user
 
     respond_to do |format|
       if @player.save
