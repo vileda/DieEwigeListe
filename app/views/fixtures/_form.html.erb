@@ -12,6 +12,11 @@
     <% end %>
 
     <div class="field">
+        <%= f.label :group %><br/>
+        <%= f.select :group_id, current_user.groupscreated.map { |g| [g.name, g.id] } %>
+    </div>
+
+    <div class="field">
         <%= f.label :player1 %><br/>
         <%= f.select :player1_id, Player.all.map { |p| [p.name, p.id] }, :selected => @fixture.player1_id %>
     </div>

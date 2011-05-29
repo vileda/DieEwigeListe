@@ -5,6 +5,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable,
          :validatable, :token_authenticatable
 
+         has_many :groupscreated, :class_name => "Group", :foreign_key => "creator_id"
+         has_one :player
+         has_many :fixtures
+         has_and_belongs_to_many :groups
+         has_many :group_users
+         has_many :groups, :through => :group_users
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
 

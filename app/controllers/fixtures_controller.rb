@@ -5,7 +5,8 @@ class FixturesController < ApplicationController
   # GET /fixtures
   # GET /fixtures.xml
   def index
-    @fixtures = Fixture.all
+    @fixtures = []
+    current_user.groups.each { |g| g.fixtures.each {|f| @fixtures << f } }
 
     respond_to do |format|
       format.html # index.html.erb

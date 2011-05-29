@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110529120925) do
+ActiveRecord::Schema.define(:version => 20110529133354) do
 
   create_table "basic_auths", :force => true do |t|
     t.string   "user"
@@ -25,6 +25,21 @@ ActiveRecord::Schema.define(:version => 20110529120925) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
+    t.integer  "group_id"
+  end
+
+  create_table "group_users", :force => true do |t|
+    t.integer  "group_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "groups", :force => true do |t|
+    t.string   "name"
+    t.integer  "creator_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "matches", :force => true do |t|
@@ -44,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20110529120925) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.integer  "user_id"
   end
 
   create_table "sharings", :force => true do |t|
