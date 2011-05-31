@@ -4,5 +4,8 @@ $(function() {
   $(".add_match input[type=text]").focus(function() {
     $(this).val("");
   });
+  $("#match_submit").click(function() {
+	$("#match_submit").addClass("working");
+  });
 });
 

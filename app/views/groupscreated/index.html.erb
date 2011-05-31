@@ -4,14 +4,12 @@
   <tr>
     <th>Name</th>
     <th>Creator</th>
-    <th></th>
   </tr>
 
 <% @groups.each do |group| %>
   <tr>
     <td><%= group.name %></td>
     <td><%= group.creator.player.name rescue group.creator.email %></td>
-    <td><%= link_to 'Show', group %></td>
   </tr>
 <% end %>
 </table>

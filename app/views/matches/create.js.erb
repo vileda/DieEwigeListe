@@ -1,2 +1,9 @@
+<% if @match.errors.length > 0 %>
+$(".add_match").effect("highlight", {color:'#f00'}, 4000);
+$(".add_match").append("<%= escape_javascript(render :partial => "layouts/flash", :object => { :flash => @match.errors }) %>");
+$(".add_match #flash_flash").fadeOut(4000);
+<% else %>
 $(".matches").html("<%= escape_javascript(render(:partial => @match.fixture.matches.reverse)) %>");
 $(".matches #match_"+<%= @match.id %>).effect("highlight", {}, 3000);
+<% end %>
+$("#match_submit").removeClass("working");

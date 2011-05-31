@@ -78,7 +78,7 @@ class MatchesController < ApplicationController
   def destroy
     @match = Match.find(params[:id])
     @match.destroy
-    
+
     respond_to do |format|
       format.html { redirect_to(matches_url) }
       format.xml  { head :ok }
